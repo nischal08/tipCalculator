@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tip Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link ref="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="bg-danger">
+    <div
+      class="container bg-white rounded border mt-5"
+      style="height:470px; width:400px; border:1px solid; margin:0 auto; "
+    >
+    <div class="border rounded text-center bg-danger" style=" height:50px; width:365px;">
+        <h3 align="center">Tip Calculator</h3>
+      </div>
+
+      <h2>How much was your bill?</h2>
+      <span> $</span>
+      <span><input type="text" id="input1"/></span>
+      <br />
+      <br />
+      <h2>how was your services ?</h2>
+
+      
+      <select id="serviceQt">
+        <option>-- Choose an Option --</option>
+        <option value="30">30% - Outstanding</option>
+        <option value="20">20% - Good</option>
+        <option value="15">15% - It was Ok</option>
+        <option value="10">10% - Bad</option>
+        <option value="5">5% - Terrible</option>
+      </select>
+      <br>
+      <br>
+      <h2>How many people are sharing the bill ?</h2>
+      <input type="text" id="input2" />
+
+      <span>people</span>
+      <br><br><br>
+      <button  class=" bg-danger rounded btn btn-danger" onclick="calculate()">Calculate</button>
+
+      <br />
+      <h3 class="p-3" id="print"></h3>
+    </div>
+  </body>
+</html>
